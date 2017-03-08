@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
 
-    <persistence-unit name="NewPersistenceUnit">
+    <persistence-unit name="CRM">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
-            <property name="hibernate.connection.url" value=""/>
-            <property name="hibernate.connection.driver_class" value=""/>
-            <property name="hibernate.connection.username" value=""/>
-            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@106.14.16.212:1521:orcl"/>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="hibernate.connection.username" value="scott"/>
+            <property name="hibernate.connection.password" value="tiger"/>
             <property name="hibernate.archive.autodetection" value="class"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hbm2ddl.auto" value="update"/>
+            <!--<property name="javax.persistence.schema-generation.database.action"  value="update"/>-->
         </properties>
     </persistence-unit>
 </persistence>
