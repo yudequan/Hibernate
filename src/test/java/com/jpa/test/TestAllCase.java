@@ -13,6 +13,7 @@ import javax.persistence.Persistence;
  */
 public class TestAllCase
 {
+
     @Test
     public void first()
     {

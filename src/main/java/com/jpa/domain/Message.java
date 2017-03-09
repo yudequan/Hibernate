@@ -2,15 +2,13 @@ package com.jpa.domain;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by yudequan on 08/03/2017.
  */
 @Entity
+@Table(name = "Message")
 public class Message
 {
     @Id
